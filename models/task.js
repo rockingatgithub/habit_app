@@ -11,17 +11,24 @@ const taskSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    statusTask:{
+    description:{
         type: String,
-        default: 'None'
     },
     important: {
         type: Boolean,
         default: false
     },
-    days: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Day'
+    statusPair:[{
+        status:{
+            type: String,
+            default: 'None',
+            required: true
+        },
+        date:{
+            type: Date,
+            default: Date.now,
+            required: true
+        }
     }]
 }, {
     timestamps: true

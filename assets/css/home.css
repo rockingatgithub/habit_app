@@ -1,0 +1,68 @@
+#new-task-form {
+    height: auto;
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 18%;
+}
+
+#new-task-form > input, label, button, textarea{
+    margin-left: 2%;
+}
+
+button, input {
+    background: text;
+}
+
+textarea{
+    background: text;
+    display: block;
+}
+
+label{
+    color: white;
+}
+
+#desc-label{
+    display: block;
+}
+
+#done{
+
+}
+
+#not-done{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#imp-label{
+    display: block;
+}
+
+#task-submit{
+    display: block;
+}
+
+
+#tasks-list {
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 18%;
+    font-family: Times;
+    margin-top: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+#today{
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 18%;
+}
+
+#main-head{
+    color: white;
+    margin-left: 18%;
+}

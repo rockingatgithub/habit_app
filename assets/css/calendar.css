@@ -1,0 +1,11 @@
+body{
+    margin:0;
+    background: linear-gradient(to right, #114357, #f29492);
+}
+
+#task-web-name{
+    margin-left: 34%;
+}
+#task-web-desc{
+    margin-left: 34%;
+}

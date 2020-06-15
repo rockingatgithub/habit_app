@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+a :hover{
+    text-decoration: none;
+    color: whitesmoke
+    ;
+}
+
+.weekview-button {
+
+    margin-left: 25%;
+    font-size: 1rem;
+
+}
+
+.tasks-item {
+
+    margin-bottom: 5%;
+    border-bottom: 1px dotted blue;
+
+}
+
+.task-name {
+
+    font-size: 2.2rem;
+    color: thistle;
+    margin-top: -5%;
+
+}

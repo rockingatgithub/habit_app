@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/task.css"/>
+<li class="tasks-item">
+    <a class="weekview-button" href="/tasks/weekview/?id=<%=task._id%>">
+        <span>Weekly Progress</span>
+    </a>
+    <h1 class="task-name"><%= task.name%></h1>
+    <p><%= task.description%></p>
+    <span><%= task.time%></span>
+    <span>
+        <%= task.statusPair.status%>
+    </span>
+    <span>
+        <%= task.important%>
+    </span>
+    <a class="did-it-update" href="tasks/updateTrue/<%= task._id%>">
+        <span>Did It</span>
+    </a>
+    <a class="did-it-update" href="tasks/updateFalse/<%= task._id%>">
+        <span>Not Yet</span>
+    </a>
+</li>

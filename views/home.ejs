@@ -1,1 +1,29 @@
-<p>it's working</p>
+<link rel="stylesheet" href="/css/home.css"/>
+
+<h1 id="main-head">Hi! There</h1>
+<span id="today"><%= Date().substring(0,15)%></span>
+<form action="/tasks/create" id="new-task-form" method="POST">
+    <label for="task-name">Name</label>
+    <input name="taskName" type="text"  id="task-name" required />
+    <label for="task-time">time</label>
+    <input name="taskTime" type="datetime" d="task-time" required />
+    <label for="task-description" id="desc-label">Description</label>
+    <textarea name="taskDescription" cols="20" rows="2" id="task-description" required></textarea>
+    <input type="radio" id="done" name="taskStatus" value="done">
+    <label for="done" id="done-label">Did it</label>
+    <input type="radio" id="not-done" name="taskStatus" value="not-done">
+    <label for="not-done" id="not-done-label">Not yet</label>
+    <label for="task-value" id="imp-label">Important</label>
+    <input type="checkbox" id="task-value" name="taskValue"  value="true"/>
+    <input type="submit" value="Add-Task" id="task-submit"/>
+</form>
+
+<div id="tasks-list">
+    <h3>Your Tasks</h3>
+    <h4>Add More</h4>
+    <ul>
+        <%for(task of tasks){%>
+            <%- include('_tasks') -%>
+        <%}%>
+    </ul>
+</div>
